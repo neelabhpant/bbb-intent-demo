@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local config (copied from the .env.example files)
+config/.env
+frontend/.env
+
+# Derived data (regenerate with data/download_data.py and data/build_table.py)
+data/raw/
+data/parquet/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store

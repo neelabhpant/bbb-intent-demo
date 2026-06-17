@@ -1,0 +1,77 @@
+{
+  "target": "Revenue",
+  "random_state": 42,
+  "excluded_features": [
+    "PageValues"
+  ],
+  "feature_columns": [
+    "Administrative",
+    "Administrative_Duration",
+    "Informational",
+    "Informational_Duration",
+    "ProductRelated",
+    "ProductRelated_Duration",
+    "BounceRates",
+    "ExitRates",
+    "SpecialDay",
+    "Month",
+    "OperatingSystems",
+    "Browser",
+    "Region",
+    "TrafficType",
+    "VisitorType",
+    "Weekend",
+    "total_pages",
+    "total_duration",
+    "avg_product_duration"
+  ],
+  "dtypes": {
+    "Administrative": "int64",
+    "Administrative_Duration": "float64",
+    "Informational": "int64",
+    "Informational_Duration": "float64",
+    "ProductRelated": "int64",
+    "ProductRelated_Duration": "float64",
+    "BounceRates": "float64",
+    "ExitRates": "float64",
+    "SpecialDay": "float64",
+    "Month": "string",
+    "OperatingSystems": "int64",
+    "Browser": "int64",
+    "Region": "int64",
+    "TrafficType": "int64",
+    "VisitorType": "string",
+    "Weekend": "bool",
+    "total_pages": "int64",
+    "total_duration": "float64",
+    "avg_product_duration": "float64"
+  },
+  "numeric_features": [
+    "Administrative",
+    "Informational",
+    "ProductRelated",
+    "OperatingSystems",
+    "Browser",
+    "Region",
+    "TrafficType",
+    "Administrative_Duration",
+    "Informational_Duration",
+    "ProductRelated_Duration",
+    "BounceRates",
+    "ExitRates",
+    "SpecialDay",
+    "total_pages",
+    "total_duration",
+    "avg_product_duration"
+  ],
+  "categorical_features": [
+    "Month",
+    "VisitorType"
+  ],
+  "boolean_features": [
+    "Weekend"
+  ],
+  "model_artifact": "model.json",
+  "preprocessing_artifact": "pipeline.joblib",
+  "scale_pos_weight": 5.463958
+}
